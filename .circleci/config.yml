@@ -345,7 +345,7 @@ jobs:
       - run:
           name: build an image of all binaries
           command: |
-            docker build -t filecoin:all --target=base --file Docker.ci.base .
+            docker build -t filecoin:all --target=base --file Dockerfile.ci.base .
           no_output_timeout: 20m
 
       - run:
